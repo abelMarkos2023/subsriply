@@ -3,7 +3,7 @@ import React from "react";
 import { Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function Insights() {
+const settings = () => {
   return (
     <SafeAreaView
       style={{
@@ -12,7 +12,9 @@ export default function Insights() {
         backgroundColor: colors.background,
       }}
     >
-      <Text>Insights</Text>
+      <Text>settings</Text>
     </SafeAreaView>
   );
-}
+};
+
+export default settings;
