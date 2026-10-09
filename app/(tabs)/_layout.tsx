@@ -39,6 +39,10 @@ export default function TabLayout() {
       screenOptions={{
         headerShown: false,
         tabBarShowLabel: false,
+        sceneStyle: {
+          paddingBottom:
+            tabBar.height + Math.max(insets.bottom, tabBar.horizontalInset),
+        },
 
         tabBarStyle: {
           position: "absolute",
@@ -65,6 +69,7 @@ export default function TabLayout() {
         />
       ))}
 
+      <Tabs.Screen name="explore" options={{ href: null }} />
       <Tabs.Screen name="subscriptions/[id]" options={{ href: null }} />
     </Tabs>
   );
