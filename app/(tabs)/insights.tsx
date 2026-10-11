@@ -1,10 +1,18 @@
+import { colors, spacing } from "@/constants/theme";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Insights() {
   return (
-    <View>
-      <Text>onboarding</Text>
-    </View>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        padding: spacing[5],
+        backgroundColor: colors.background,
+      }}
+    >
+      <Text>Insights</Text>
+    </SafeAreaView>
   );
 }
