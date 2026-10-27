@@ -47,7 +47,7 @@
 
 @layer components {
   .home-header {
-    @apply mb-2.5 flex-row items-center justify-between;
+    @apply mb-2.5 flex-row items-center justify-between bg-amber-600;
   }
 
   .home-user {
